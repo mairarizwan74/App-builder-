@@ -1,0 +1,25 @@
+[project]
+name = "app-builder"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Maira Rizwan", email = "fa24b1-se-074@fjwu.edu.pk" }
+]
+requires-python = ">=3.14"
+dependencies = [ "groq>=0.31.0",
+    "langchain>=0.3.27",
+    "langchain-core>=0.3.72",
+    "langchain-groq>=0.3.7",
+    "langgraph>=0.6.3",
+    "pip>=25.2",
+    "pydantic>=2.11.7",
+    "python-dotenv>=1.1.1",
+]
+
+[project.scripts]
+app-builder = "app_builder:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
